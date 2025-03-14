@@ -44,29 +44,21 @@
             background-color: #b0216c;
         }
 
-        /* Estilo para las propuestas de colaboración */
-        .propuestas-colaboracion {
-            margin-top: 30px;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-
-        .propuesta {
+        /* Estilo para las ofertas de trabajo */
+        .oferta-trabajo {
             background-color: #fff3f8;
             padding: 20px;
             border-radius: 10px;
             border: 1px solid #d63384;
+            margin-bottom: 20px;
             text-align: left;
         }
 
-        .propuesta h4 {
+        .oferta-trabajo h3 {
             color: #d63384;
-            margin-bottom: 10px;
         }
 
-        .propuesta p {
+        .oferta-trabajo p {
             color: #333;
         }
 
@@ -76,7 +68,6 @@
             padding: 20px;
             border-radius: 10px;
             margin-top: 30px;
-            display: none;
         }
 
         .formulario-colaboracion input,
@@ -102,6 +93,57 @@
         .formulario-colaboracion button:hover {
             background-color: #b0216c;
         }
+
+        /* Estilo para las propuestas de colaboración */
+        .propuestas-colaboracion {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .propuesta {
+            background-color: #fff3f8;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #d63384;
+            text-align: left;
+        }
+
+        .propuesta h4 {
+            color: #d63384;
+            margin-bottom: 10px;
+        }
+
+        .propuesta p {
+            color: #333;
+        }
+
+        /* Tablón de anuncios de colaboraciones */
+        .tablón-colaboraciones {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #fff3f8;
+            border-radius: 10px;
+            border: 1px solid #d63384;
+        }
+
+        .tablón-colaboraciones h2 {
+            color: #d63384;
+            margin-bottom: 20px;
+        }
+
+        .anuncio-colaboracion {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #d63384;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .anuncio-colaboracion p {
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
@@ -113,7 +155,7 @@
         <p>Somos un equipo de personas comprometidas con la igualdad en el empleo. Desde nuestro bufete de expertos en inclusión laboral, luchamos por una Murcia con oportunidades justas para tod@s.</p>
     </div>
     
-    <!-- Sección de ofertas de trabajo organizadas por provincias -->
+    <!-- Sección de ofertas de trabajo -->
     <div class="container">
         <h2>Ofertas de Trabajo</h2>
 
@@ -191,7 +233,7 @@
         </form>
     </div>
 
-    <!-- Propuestas de colaboración reales (visibles tras el envío del formulario) -->
+    <!-- Propuestas de colaboración reales -->
     <div class="container propuestas-colaboracion" id="propuestasColaboracion" style="display: none;">
         <h2>Propuestas de Colaboración Reales</h2>
 
@@ -214,6 +256,19 @@
             <h4>Colaboración en Eventos - Empresa 123</h4>
             <p>Descripción: Organizar eventos conjuntos para promover la igualdad de género en el ámbito empresarial.</p>
             <p><strong>Contacto:</strong> <a href="mailto:empresa@123.com">empresa@123.com</a></p>
+        </div>
+    </div>
+
+    <!-- Tablón de anuncios de colaboraciones -->
+    <div class="container tablón-colaboraciones">
+        <h2>Anuncios de Colaboraciones de Empresas</h2>
+        <div class="anuncio-colaboracion">
+            <p><strong>Empresa 456:</strong> Busca colaboración en mentoría para proyectos de igualdad de género.</p>
+            <p><strong>Contacto:</strong> <a href="mailto:empresa@456.com">empresa@456.com</a></p>
+        </div>
+        <div class="anuncio-colaboracion">
+            <p><strong>Empresa 789:</strong> Ofrece apoyo financiero a emprendedores sociales.</p>
+            <p><strong>Contacto:</strong> <a href="mailto:empresa@789.com">empresa@789.com</a></p>
         </div>
     </div>
 
